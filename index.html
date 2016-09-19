@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="mystyle.css" />
-    <title>JavaScript Date Methods </title>
+    <title>Time Zone</title>
     <meta charset="utf-8">
     <!-- Bootstrap 3 is mobile-first -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,9 +15,47 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <!---->
+    <!-- .container-fluid spanning the entire width of viewport -->
+    <div class="container-fluid">
+      <!-- jumbotron inside container to NOT extend to edge of screen -->
+      <div class="jumbotron">
+        <h2 class="text-center">Time Zone</h2>
+        <!-- form element defines a form that is used to collect user input -->
+        <form>
+          <!-- Trigger the modal with a button -->
+          <div class="btn-group">
+            <button id="luluBtn" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+              Honolulu
+            </button>
+            <button id="FranBtn" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+              San Francisco
+            </button>
+          </div>
 
-
+        </form>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Your Car's MPG</h4>
+              </div>
+              <div class="modal-body">
+                <h2 id="outLulu"></h2>
+              </div>
+              <div class="modal-body">
+                <h2 id="outFran"></h2>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- NOTE: This tag connects the JS to our HTML-->
     <script src="app.js"></script>
   </body>

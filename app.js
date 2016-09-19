@@ -1,13 +1,8 @@
-var name = "John Doe";
-var city = "Chicago";
+// Event listener that fires when a user clicks a button.
+document.getElementById("luluBtn").addEventListener("click",
+  document.getElementById('outLulu').innerHTML = "Hawaii-Aleutian"
+);
 
-console.log("Hello " + name);
-console.log("You live in " + city);
-
-var cars = ["Toyota Camry", "Honda Civic", "Toyota Corolla", "Nissan Altima",
-            "Honda Accord", "Ford Fusion", "Nissan Sentra", "Hyundai Sonata",
-            "Chevrolet Malibu", "Chevrolet Cruze"];
-
-console.log(cars.length);
-var carSort = cars.sort();
-console.log(carSort);
+document.getElementById("FranBtn").addEventListener("click",
+  document.getElementById('outFran').innerHTML = "Pacific"
+);
